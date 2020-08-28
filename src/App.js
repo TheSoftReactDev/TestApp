@@ -1,13 +1,14 @@
 import React from "react";
-
 import "./App.css";
-import ShoppingItems from "./shoppingCart/ShoppingItems";
-
+import SelectScreen from "./Portal/SelectScreen";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <ShoppingItems />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <SelectScreen />
+      </div>
+    </BrowserRouter>
   );
 }
 
